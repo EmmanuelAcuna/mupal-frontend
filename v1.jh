@@ -1,0 +1,10 @@
+entity Client {
+	name String,
+	contactId String,
+	logUrl String,
+}
+
+entity Establishment {
+	name String,
+	contactId String
+}
