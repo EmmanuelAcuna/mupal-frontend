@@ -1,0 +1,62 @@
+entity Client {
+	name String,
+    logoUrl String,
+    salary Long,
+    createdAt Instant,
+    updatedAt Instant,
+}
+
+entity Establishment {
+	name String,
+    paydDate Long,
+    lat Long,
+    lng Long
+}
+
+entity Contact {
+	email String,
+    phone String,
+    createdAt Instant,
+    updatedAt Instant,
+}
+
+entity Watch {
+	validFrom Instant,
+    validTo Instant,
+    startOn Instant,
+    endOn Instant,
+    createdAt Instant,
+    updatedAt Instant,
+}
+
+entity Patrol {
+	name String
+}
+
+entity WatchGuard {
+	idGuard String,
+    assignDate Instant,
+    
+}
+
+enum Language {
+    ENGLISH, SPANISH
+}
+
+relationship OneToOne {
+	Client{contactId} to Contact
+    Establishment{contactId} to Contact
+    WatchGuard{idWatch} to Watch
+}
+
+relationship OneToMany {
+	Watch{idEstablish} to Establishment
+    Patrol{idEstablish} to Establishment
+}
+
+// Set pagination options
+paginate Client with pagination
+paginate Establishment with pagination
+paginate Watch with pagination
+paginate Patrol with pagination
+paginate WatchGuard with pagination
