@@ -1,0 +1,27 @@
+{
+    "name": "Patrol",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "establishment",
+            "otherEntityRelationshipName": "patrol",
+            "relationshipName": "idEstablish"
+        }
+    ],
+    "changelogDate": "20200307004400",
+    "entityTableName": "patrol",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

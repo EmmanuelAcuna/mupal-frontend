@@ -1,0 +1,33 @@
+{
+    "name": "WatchGuard",
+    "fields": [
+        {
+            "fieldName": "idGuard",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "assignDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "watch",
+            "otherEntityRelationshipName": "watchGuard",
+            "relationshipName": "idWatch",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200307004500",
+    "entityTableName": "watch_guard",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

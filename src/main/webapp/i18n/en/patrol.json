@@ -1,0 +1,23 @@
+{
+  "mupalApp": {
+    "patrol": {
+      "home": {
+        "title": "Patrols",
+        "createLabel": "Create a new Patrol",
+        "createOrEditLabel": "Create or edit a Patrol",
+        "notFound": "No Patrols found"
+      },
+      "created": "A new Patrol is created with identifier {{ param }}",
+      "updated": "A Patrol is updated with identifier {{ param }}",
+      "deleted": "A Patrol is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Patrol {{ id }}?"
+      },
+      "detail": {
+        "title": "Patrol"
+      },
+      "name": "Name",
+      "idEstablish": "Id Establish"
+    }
+  }
+}
