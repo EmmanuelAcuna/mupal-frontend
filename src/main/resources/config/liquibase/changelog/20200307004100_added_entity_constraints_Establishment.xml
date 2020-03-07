@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Establishment.
+    -->
+    <changeSet id="20200307004100-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="contact_id_id"
+                                 baseTableName="establishment"
+                                 constraintName="fk_establishment_contact_id_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="contact"/>
+
+        <addForeignKeyConstraint baseColumnNames="watch_id"
+                                 baseTableName="establishment"
+                                 constraintName="fk_establishment_watch_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="watch"/>
+
+        <addForeignKeyConstraint baseColumnNames="patrol_id"
+                                 baseTableName="establishment"
+                                 constraintName="fk_establishment_patrol_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="patrol"/>
+
+    </changeSet>
+</databaseChangeLog>

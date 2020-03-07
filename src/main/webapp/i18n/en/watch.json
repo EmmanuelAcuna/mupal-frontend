@@ -1,0 +1,28 @@
+{
+  "mupalApp": {
+    "watch": {
+      "home": {
+        "title": "Watches",
+        "createLabel": "Create a new Watch",
+        "createOrEditLabel": "Create or edit a Watch",
+        "notFound": "No Watches found"
+      },
+      "created": "A new Watch is created with identifier {{ param }}",
+      "updated": "A Watch is updated with identifier {{ param }}",
+      "deleted": "A Watch is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Watch {{ id }}?"
+      },
+      "detail": {
+        "title": "Watch"
+      },
+      "validFrom": "Valid From",
+      "validTo": "Valid To",
+      "startOn": "Start On",
+      "endOn": "End On",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "idEstablish": "Id Establish"
+    }
+  }
+}

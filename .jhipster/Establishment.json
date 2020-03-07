@@ -1,0 +1,55 @@
+{
+    "name": "Establishment",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paydDate",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "lat",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "lng",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "contact",
+            "otherEntityRelationshipName": "establishment",
+            "relationshipName": "contactId",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "watch",
+            "otherEntityRelationshipName": "idEstablish",
+            "relationshipName": "watch",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "patrol",
+            "otherEntityRelationshipName": "idEstablish",
+            "relationshipName": "patrol",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200307004100",
+    "entityTableName": "establishment",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

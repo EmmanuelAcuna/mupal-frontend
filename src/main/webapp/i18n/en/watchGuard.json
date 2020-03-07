@@ -1,0 +1,24 @@
+{
+  "mupalApp": {
+    "watchGuard": {
+      "home": {
+        "title": "Watch Guards",
+        "createLabel": "Create a new Watch Guard",
+        "createOrEditLabel": "Create or edit a Watch Guard",
+        "notFound": "No Watch Guards found"
+      },
+      "created": "A new Watch Guard is created with identifier {{ param }}",
+      "updated": "A Watch Guard is updated with identifier {{ param }}",
+      "deleted": "A Watch Guard is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Watch Guard {{ id }}?"
+      },
+      "detail": {
+        "title": "Watch Guard"
+      },
+      "idGuard": "Id Guard",
+      "assignDate": "Assign Date",
+      "idWatch": "Id Watch"
+    }
+  }
+}

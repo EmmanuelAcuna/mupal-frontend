@@ -1,0 +1,47 @@
+{
+    "name": "Watch",
+    "fields": [
+        {
+            "fieldName": "validFrom",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "validTo",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "startOn",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endOn",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "establishment",
+            "otherEntityRelationshipName": "watch",
+            "relationshipName": "idEstablish"
+        }
+    ],
+    "changelogDate": "20200307004300",
+    "entityTableName": "watch",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

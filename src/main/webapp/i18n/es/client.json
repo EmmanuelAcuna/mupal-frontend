@@ -1,0 +1,27 @@
+{
+  "mupalApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "createLabel": "Crear nuevo Client",
+        "createOrEditLabel": "Crear o editar Client",
+        "notFound": "Ningún Clients encontrado"
+      },
+      "created": "Un nuevo Client ha sido creado con el identificador {{ param }}",
+      "updated": "Un Client ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Client ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Client {{ id }}?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "name": "Name",
+      "logoUrl": "Logo Url",
+      "salary": "Salary",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "contactId": "Contact Id"
+    }
+  }
+}
